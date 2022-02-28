@@ -36,12 +36,12 @@ export default class MyProfile extends Component {
                     <View style={styles.button}>
                         <TouchableOpacity
                             // onPress={}
-                            style={{ backgroundColor: '#FFFD6F', width: '46%', height: 40, marginTop: 50, borderRadius: 2, marginBottom: 25 }}>
+                            style={{ backgroundColor: '#FFFD6F', width: '46%', height: 40, marginTop: 50, borderRadius: 2, marginBottom: 5 }}>
                             <Text style={{ fontSize: 15, color: 'black', textAlign: 'center', borderColor: '#00000000', marginTop: '5%' }}>Edit profile</Text>
                         </TouchableOpacity>
                         <TouchableOpacity
                             // onPress={}
-                            style={{ backgroundColor: '#FFFD6F', width: '46%', height: 40, marginTop: 50, borderRadius: 2, marginBottom: 25 }}>
+                            style={{ backgroundColor: '#FFFD6F', width: '46%', height: 40, marginTop: 50, borderRadius: 2, marginBottom: 5 }}>
                             <Text style={{ fontSize: 15, color: 'black', textAlign: 'center', borderColor: '#00000000', marginTop: '5%' }}>Add story</Text>
                         </TouchableOpacity>
                     </View>

@@ -36,12 +36,12 @@ export default class Profile extends Component {
                     <View style={styles.button}>
                         <TouchableOpacity
                             // onPress={}
-                            style={{ backgroundColor: '#FFFD6F', width: '46%', height: 40, marginTop: 50, borderRadius: 2, marginBottom: 25}}>
+                            style={{ backgroundColor: '#FFFD6F', width: '46%', height: 40, marginTop: 50, borderRadius: 2, marginBottom: 5}}>
                             <Text style={{ fontSize: 15, color: 'black', textAlign: 'center', borderColor: '#00000000', marginTop: '5%' }}>Connect</Text>
                         </TouchableOpacity>
                         <TouchableOpacity
                             // onPress={}
-                            style={{ backgroundColor: '#FFFD6F', width: '46%', height: 40, marginTop: 50, borderRadius: 2, marginBottom: 25 }}>
+                            style={{ backgroundColor: '#FFFD6F', width: '46%', height: 40, marginTop: 50, borderRadius: 2, marginBottom: 5 }}>
                             <Text style={{ fontSize: 15, color: 'black', textAlign: 'center', borderColor: '#00000000', marginTop: '5%' }}>Invite</Text>
                         </TouchableOpacity>
                     </View>

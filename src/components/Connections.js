@@ -60,7 +60,7 @@ export default function Connections() {
     const win = Dimensions.get('window')
 
     return (
-        <View style={{ backgroundColor: 'white', marginTop: 30, height: '100%', width: '100%' }}>
+        <View style={{ backgroundColor: 'white', marginTop: 30, height: '100%', width: '100%', }}>
             <View style={styles.itemContainer}>
                 <SearchBar
                     inputStyle={{ backgroundColor: 'white', padding: 5 }}
@@ -78,10 +78,12 @@ export default function Connections() {
                 // staticDimension={300}
                 // fixed
                 spacing={10}
+                
                 // justifyContent= 'center'
                 renderItem={({ item }) => (
                         <View>
                             <Image
+                                resizeMode='cover'
                                 style={styles.itemPhoto}
                                 source={item.image}
                             />
@@ -104,7 +106,8 @@ export default function Connections() {
 const styles = StyleSheet.create({
     gridView: {
         padding: 7,
-        marginTop: 2
+        marginTop: 2,
+        marginBottom: 30
     },
     itemContainer: {
         marginRight: 10,
@@ -115,7 +118,7 @@ const styles = StyleSheet.create({
         borderRadius: 50,
         padding: 10,
         height: 200,
-        width: '96%'
+        width: 360,
     },
     itemName: {
         fontSize: 10,
@@ -123,11 +126,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginLeft: 45,
         marginTop: -23,
-    },
-    itemCode: {
-        fontWeight: '600',
-        fontSize: 12,
-        color: '#fff',
+        marginBottom: 5
     },
     ico: {
         width: 30,

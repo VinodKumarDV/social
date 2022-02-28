@@ -75,7 +75,7 @@ export default function Messages() {
 
 const styles = StyleSheet.create({
     gridView: {
-        marginBottom: '18%',
+        marginBottom: '8%',
         flex: 1,
         marginTop: -5,
         marginLeft: '-1%'

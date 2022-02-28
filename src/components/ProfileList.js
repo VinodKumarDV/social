@@ -77,7 +77,7 @@ export default function ProfileList() {
 const styles = StyleSheet.create({
   gridView: {
     flex: 1,
-    marginBottom: '105%',
+    marginBottom: '66%',
     padding: 7,
     
   },
