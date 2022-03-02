@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, Image, Dimensions } from 'react-native';
+import { StyleSheet, View, Text, Image, Dimensions, TextInput } from 'react-native';
 import { FlatGrid } from 'react-native-super-grid';
-import { SearchBar } from 'react-native-elements';
+import Ionicons from "react-native-vector-icons/Ionicons"
+
 
 const IMAGES = {
     image1: require('../../assets/feed_images/1.jpg'),
@@ -25,7 +26,11 @@ const IMAGES = {
     image19: require('../../assets/feed_images/11.jpg'),
     image20: require('../../assets/feed_images/12.jpg'),
     image21: require('../../assets/feed_images/1.jpg'),
+    searchimg: require('../../assets/search.png'),
 }
+
+const img = require('../../assets/search.png')
+const filter = require('../../assets/filter.png')
 
 export default function Connections() {
     const [searchQuery, setSearchQuery] = React.useState('');
@@ -55,21 +60,31 @@ export default function Connections() {
         { name: 'BESTOS', image: IMAGES.image21 },
     ]);
 
-
-
     const win = Dimensions.get('window')
 
+
     return (
-        <View style={{ backgroundColor: 'white', marginTop: 30, height: '100%', width: '100%', }}>
+        <View style={{ backgroundColor: 'black', marginTop: 30, height: '100%', width: '100%', }}>
             <View style={styles.itemContainer}>
-                <SearchBar
-                    inputStyle={{ backgroundColor: 'white', padding: 5 }}
-                    containerStyle={{ backgroundColor: 'white', borderWidth: 1, borderRadius: 5, padding: -5 }}
-                    placeholderTextColor= '#g5g5g5'
-                    placeholder={'Type Here......'}
+                <Image source={img} style={{
+                    width: 35, height: 30,
+                    transform: [
+                        { scaleX: -1 }
+                    ]}}/>
+                <TextInput
+                    placeholder={'Search Here......'}
+                    placeholderTextColor='white'
                     onChangeText={onChangeSearch}
                     value={searchQuery}
+                    style={{
+                         borderBottomWidth: 2, color: 'white', borderBottomColor: 'white', fontSize: 20, paddingBottom: 8, paddingLeft: '12%', paddingRight: '11%', width: '100%', marginLeft: -35}}
                 />
+                <Image resizeMode='center' source={filter} tintColor='white' style={{
+                    width: 35, height: 30, marginLeft: -35,
+                    transform: [
+                        { scaleX: -1 }
+                    ]
+                }} />
             </View>
             <FlatGrid
                 itemDimension={280}
@@ -112,7 +127,8 @@ const styles = StyleSheet.create({
     itemContainer: {
         marginRight: 10,
         marginLeft: 10,
-        marginTop: 5
+        marginTop: 10,
+        flexDirection: 'row'
     },
     itemPhoto: {
         borderRadius: 50,
