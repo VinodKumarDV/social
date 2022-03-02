@@ -61,17 +61,17 @@ const styles = StyleSheet.create({
     },
 
     input: {
-        width: '112%',
+        width: '110%',
         height: 50,
         padding: 15,
         borderWidth: 2,
         fontSize: 20,
         color: 'white',
         borderTopColor: 'white',
-        borderRadius: 5,
+        borderRadius: 3,
     },
     input1: {
-        width: '112%',
+        width: '110%',
         minHeight: 150,
         padding: 15,
         borderWidth: 2,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
         color: '#FFFD6F',
         borderTopColor: '#FFFFFF',
         borderBottomColor: '#FFFFFF',
-        borderRadius: 5,
+        borderRadius: 3,
         textAlignVertical: "top"
     },
     text: {
