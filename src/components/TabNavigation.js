@@ -36,7 +36,7 @@ const MainContainer = () => {
                 })}
             >
                 <Tab.Screen name="Settings" component={Setings} />
-                <Tab.Screen name="Messages" component={Messages} />
+                <Tab.Screen name="Message" component={Messages} />
                 <Tab.Screen name="Connections" component={Connections} />
                 <Tab.Screen name="Profile" component={Profile} />
             </Tab.Navigator>
