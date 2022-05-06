@@ -16,16 +16,16 @@ import PrivacyPolicy from './src/components/PrivacyPolicy';
 import Help from './src/components/Help';
 
 
-// import { StatusBar } from "react-native";
-// import TabNavigations from "./src/components/TabNavigation";
+import { StatusBar } from "react-native";
+import TabNavigations from "./src/components/TabNavigation";
 
 
 export default function App() {
   return (
     <>
-      {/* <StatusBar barStyle="dark-content" hidden={false} backgroundColor="white" translucent={true} />
-      <TabNavigations /> */}
-      <Help/>
+       <StatusBar barStyle="dark-content" hidden={false} backgroundColor="white" translucent={true} />
+      <TabNavigations />
+      // <Help/>
     </>
   );
 };
